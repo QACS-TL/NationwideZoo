@@ -56,7 +56,11 @@
                 {
                     value = value + "*";
                 }
-                name = value; 
+                if(value.Length > 5)
+                {
+                    value = value.Substring(0, 5);
+                }
+                name = value;
             }
         }
 
