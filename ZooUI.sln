@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36518.9 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooUI", "ZooUI\ZooUI.csproj", "{0EFD531F-3A77-48DF-B9DA-75BFFE0005E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooClassLibrary", "ZooClassLibrary\ZooClassLibrary.csproj", "{E1E117B9-3022-4834-8AD5-198C5379A00A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0EFD531F-3A77-48DF-B9DA-75BFFE0005E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EFD531F-3A77-48DF-B9DA-75BFFE0005E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EFD531F-3A77-48DF-B9DA-75BFFE0005E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1E117B9-3022-4834-8AD5-198C5379A00A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1E117B9-3022-4834-8AD5-198C5379A00A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1E117B9-3022-4834-8AD5-198C5379A00A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1E117B9-3022-4834-8AD5-198C5379A00A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
