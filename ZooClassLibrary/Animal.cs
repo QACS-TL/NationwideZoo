@@ -3,6 +3,7 @@
     public class Animal
     {
         private int limbcount = 4;
+        public static int Count { get; set; } = 0;
 
         public Animal(string name = "Anon", string colour = "Brown", int age = 1, int limbcount = 4)
         {
@@ -10,6 +11,7 @@
             this.colour = colour;
             this.Age = age;
             this.limbcount = limbcount;
+            Count++;
         }
 
         private List<string> validColours = new List<string>()
@@ -23,7 +25,8 @@
             "Green",
             "Blue",
             "Red",
-            "Orange"
+            "Orange",
+            "Black and White"
         };
 
         private string colour;
@@ -99,7 +102,7 @@
             return "Roar!";
         }
 
-        public string Eat(string food)
+        public virtual string Eat(string food)
         {
             return $"{name} is eating {food}.";
         }
