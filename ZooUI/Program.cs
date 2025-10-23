@@ -1,4 +1,5 @@
-﻿using ZooClassLibrary;
+﻿using System.Text;
+using ZooClassLibrary;
 
 //int animalsCount = 0;
 
@@ -66,6 +67,8 @@ animals.Add(pongu);
 Console.WriteLine(pongu.Eat("fish"));
 
 TRex rexy = new TRex(name:"Rexy", colour:"Green", age:10, limbCount:2, jawStrength:1500.0);
+
+
 animals.Add(rexy);
 
 foreach (Animal a in animals)
@@ -87,3 +90,36 @@ foreach (Animal a in animals)
 Console.WriteLine($"There are currently {Animal.Count}");
 
 
+
+
+
+Person bob = new Person("Bob", 47);
+Person sue = new Person("Sue", 45);
+Person charlie = new Person("Chalie", 28);
+
+
+Console.WriteLine(bob);
+Console.WriteLine(sue);
+Console.WriteLine(charlie);
+
+bob.Work();
+
+
+Seagul sg = new Seagul();
+sg.Fly();
+
+pingu.Swim();
+
+Animal unknownAnimal = sg;
+IFlyingAnimal flyer = sg;
+ISwimmer swimmer = sg;
+
+sg.Swim();
+
+
+
+
+using FileStream stream = File.Open("C:/qa/csharp/myfile.txt", FileMode.OpenOrCreate);
+stream.Write(
+    Encoding.UTF8.GetBytes("Hello World!")
+    );

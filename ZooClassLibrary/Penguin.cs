@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace ZooClassLibrary
 {
-    public class Penguin:Animal
+    public class Penguin:Animal, ISwimmer
     {
 
         public Penguin(string name="PINGU", string colour="Red", int age = 1, int limbCount = 4, double quiffLength= 10.0  ): base( name, colour, age, limbCount)
@@ -30,6 +30,10 @@ namespace ZooClassLibrary
         override public string ToString()
         {
             return $"Penguin:{base.ToString()}, QuiffLength: {QuiffLength})";
+        }
+        public void Swim()
+        {
+            Console.WriteLine($"{Name} is swimming gracefully");
         }
     }
 }
