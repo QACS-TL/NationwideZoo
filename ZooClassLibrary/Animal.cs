@@ -4,12 +4,7 @@
     {
         private int limbcount = 4;
 
-        //public Animal()
-        //{
-           
-        //}
-      
-        public Animal(string name="Anon", string colour="Brown", int age=1, int limbcount=4)
+        public Animal(string name = "Anon", string colour = "Brown", int age = 1, int limbcount = 4)
         {
             this.name = name;
             this.colour = colour;
@@ -106,6 +101,11 @@
         }
 
         public string Move(string direction)
+        {
+            return $"{name} is moving {direction}.";
+        }
+
+        public string Move(string direction, int distance)
         {
             return $"{name} is moving {direction}.";
         }
